@@ -57,7 +57,6 @@ if (isset($_GET['pesan'])) {
       </tr>
 
       <?php
-      // print_r($res);
       $tanggal = date('d-m-Y');
       $no = 1;
       while ($row = $res->fetch_assoc()) { ?>
@@ -65,7 +64,7 @@ if (isset($_GET['pesan'])) {
           <td><?= $no++; ?></td>
           <td><?= $row['name'] ?></td>
           <td><?= $row['nama'] ?></td>
-          <td><?= $tanggal ?></td>
+          <td><?= $row['tanggal'] ?></td>
           <td><?= $row['sesi'] ?></td>
           <td><?= $row['nilai1'] ?></td>
           <td><?= $row['nilai2'] ?></td>
