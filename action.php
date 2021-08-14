@@ -9,9 +9,7 @@ if (!empty($_POST['coach'])) {
   $coach = $_POST['coach'];
   $coachec = $_POST['coachec'];
   $tanggal = $_POST['tanggal'];
-  $w = date("Y-m-d", strtotime($tanggal));
-  $y = date('Y-m-d', strtotime($tanggal));
-  $z = date('d-m-Y', strtotime($tanggal));
+  $tgl = date("Y-m-d", strtotime($tanggal));
   $sesi = $_POST['sesi'];
   $nilai1 = $_POST['nilai1'];
   $nilai2 = $_POST['nilai2'];
@@ -20,7 +18,7 @@ if (!empty($_POST['coach'])) {
   $total = $nilai1 + $nilai2 + $nilai3 + $nilai4;
 
   $rata = $total / 4;
-  $rata9 = "INSERT INTO nilai VALUES ('',$coach,$coachec,$w,$sesi,$nilai1,$nilai2,$nilai3,$nilai4,$rata)";
+  $rata9 = "INSERT INTO nilai VALUES ('',$coach,$coachec,$tgl,$sesi,$nilai1,$nilai2,$nilai3,$nilai4,$rata)";
 
   $c = mysqli_query($conn, $rata9) or die(mysqli_error($conn));
 
