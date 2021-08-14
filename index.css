@@ -1,0 +1,17 @@
+form {
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px 50px;
+}
+.pesan {
+  color: red;
+}
+.header {
+  width: 500px;
+  margin: auto;
+}
+.radio {
+  margin-left: 5px;
+}
